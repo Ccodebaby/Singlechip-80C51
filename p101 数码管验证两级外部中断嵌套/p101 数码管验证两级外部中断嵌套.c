@@ -11,9 +11,9 @@ main()
 {
 	small_led = 0;
 	P0 = P1 = P2 = _led_;  // show '-'
-	IT0 = IT1 = 1;  // 脉冲触发
-	PX0 = 0; PX1 = 1;  // 优先级：int1 > int2
-	EX0 = EX1 = EA = 1;  // 开中断
+	IT0 = IT1 = 1;  	   // 脉冲触发
+	PX0 = 0; PX1 = 1;  	   // 优先级：int1 > int2
+	EX0 = EX1 = EA = 1;    // 开中断
 	
 	while( true ) {
 		show( 0 );
