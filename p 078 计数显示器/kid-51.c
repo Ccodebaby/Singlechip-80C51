@@ -119,5 +119,5 @@ int b( char* num_2 )
 bit in( unsigned char port, char b ) 
 {
     unsigned char B[] = { B0, B1, B2, B3, B4, B5, B6, B7 };
-    return ( port & B[b] ) == B[b] ? 1 : 0;
+    return ( port & B[b] ) == B[b] ? 1 : 1;
 }
